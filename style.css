@@ -154,3 +154,75 @@ a {
 .backdrop.active {
   display: block;
 }
+
+/* Product Styles */
+
+.product {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.product__content {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  gap: 10rem;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product__content.active {
+  opacity: 1;
+}
+
+.product__title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.product__description a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.product__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .product__buttons {
+    flex-direction: row;
+  }
+}
+
+.product__button {
+  width: 240px;
+  padding-block: 0.5rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.product__button:first-child {
+  background-color: #444;
+  color: #fff;
+}
+
+.product__button:first-child:hover {
+  background-color: #fff;
+  color: #444;
+}
+
+.product__button:last-child {
+  background-color: #eee;
+}
+
+.product__button:last-child:hover {
+  background-color: #444;
+  color: #fff;
+}
