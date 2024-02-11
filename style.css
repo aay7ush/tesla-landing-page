@@ -168,13 +168,6 @@ a {
   display: grid;
   place-items: center;
   gap: 10rem;
-
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.product__content.active {
-  opacity: 1;
 }
 
 .product__title {
