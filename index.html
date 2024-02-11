@@ -8,6 +8,31 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>Let's build Tesla Landing Page</h1>
+    <header class="header">
+      <a href="/" class="header__logo">
+        <img src="./assets/logo.svg" alt="logo" />
+      </a>
+
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-link"><a href="#model-s">Model S</a></li>
+          <li class="header__nav-link"><a href="#model-3">Model 3</a></li>
+          <li class="header__nav-link"><a href="#model-x">Model X</a></li>
+          <li class="header__nav-link"><a href="#model-y">Model Y</a></li>
+          <li class="header__nav-link">
+            <a href="#solar-roof">Solar Roof</a>
+          </li>
+          <li class="header__nav-link">
+            <a href="#solar-panel">Solar Panel</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__buttons">
+        <button class="header__button desktop">Shop</button>
+        <button class="header__button desktop">Account</button>
+        <button id="menu-btn" class="header__button">Menu</button>
+      </div>
+    </header>
   </body>
 </html>
